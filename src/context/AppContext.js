@@ -47,7 +47,6 @@ export const AppReducer = (state, action) => {
             return {
                 ...state,
                 expenses: updatedExpenses,
-                budget: state.budget + totalExpense,
             };
         case "RED_EXPENSE":
             const red_expenses = state.expenses.map((currentExp) => {
